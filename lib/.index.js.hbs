@@ -1,0 +1,17 @@
+/**
+ * {{pkg.description}}
+ * @module {{pkg.name}}
+ * @version {{pkg.version}}
+ */
+
+'use strict'
+
+const aphase = require('./aphase')
+
+let lib = aphase.bind(this)
+
+Object.assign(lib, aphase, {
+  aphase
+})
+
+module.exports = lib
