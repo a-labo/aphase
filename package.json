@@ -1,9 +1,9 @@
 {
   "name": "aphase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Phase runner",
   "main": "lib",
-  "browser":"shim/browser",
+  "browser": "shim/browser",
   "scripts": {
     "test": "node ./ci/test.js",
     "prepublish": "node ./ci/build.js && node ./ci/shim.js"
