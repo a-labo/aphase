@@ -24,6 +24,10 @@ describe('aphase', function () {
     assert.ok(yield phase('foo:hoge', () => console.log('this is hoge')))
     assert.ok(!(yield phase('quz:yes', () => console.log('this is yes'))))
     assert.ok(phase)
+
+    yield phase.all({
+      'foo:all': () => console.log('foo')
+    })
   }))
 })
 
